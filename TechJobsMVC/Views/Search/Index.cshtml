@@ -30,4 +30,23 @@
         //TODO #4: Loop over the search results to display all job fields.
     }
 
+
+    
+    @*@foreach (Job job in ViewBag.jobs )
+    {
+        <table class="job-listing">
+            <tr>
+                <td>
+                    Id: @job.Id <br>
+                    Name: @job.Name <br>
+                    Employer: @job.Employer <br>
+                    Location: @job.Location <br>
+                    Position Type: @job.PositionType <br>
+                    Skill: @job.CoreCompetency <br>
+                </td>
+
+            </tr>
+        </table>
+    }*@
+
 </div>
